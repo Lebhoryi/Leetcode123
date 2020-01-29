@@ -3,7 +3,7 @@
 @ Summary: 给定一个字符串 s，找到 s 中最长的回文子串。你可以假设 s 的最大长度为 1000。
 @ Update:  
 
-@ file:    005._longest_palindromic_substring.py
+@ file:    5.最长回文子串.py
 @ version: 1.0.0
 
 @ Author:  Lebhoryi@gmail.com
@@ -103,7 +103,7 @@ class Solution3:
 # 方法四： DP（时间花费顺序3）
 #     dp[left][right]:(前开后闭)代表字符串
 #     动态转换公式：
-#         dp[left][right] = 1, s[left] == s[right] and ((right-left-1 <= 3) or dp[left+1][right-1])
+#         dp[left][right] = 1, s[left] == s[right] and ((right-left-1 <= 1) or dp[left+1][right-1])
 #         dp[left][right] = 0, otherwise
 ###################################################
 class Solution4(object):
@@ -115,7 +115,9 @@ class Solution4(object):
         max_len, res = 1, s[0]
         # 从末尾开始，往前查找回文字符串
         for r in range(len(s)):
-            for l in range(r+1):
+            for l in range(r):
+                # dp[l][r] 表示s[l][r]是否为回文子串
+                # 当首尾字符相同时，判断子串是不是回文子串
                 if s[l] == s[r] and (r-l <= 2 or dp[l+1][r-1]):
                     dp[l][r] = 1
                 if dp[l][r] and max_len < r-l+1:
