@@ -15,3 +15,9 @@
 冲冲冲！ 
 
 学了一点数据结构，为了offer！！！
+
+> 2020/01/30
+
+get 心目中的代码，传送门：[Shortest-LeetCode-Python-Solutions](https://github.com/cy69855522/Shortest-LeetCode-Python-Solutions)
+
+它弘扬的精神：不求最快最省，但求最短最优雅 
