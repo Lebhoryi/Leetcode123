@@ -3,7 +3,7 @@
 @ Summary: Pown(x, n)
 @ Update:  https://leetcode-cn.com/problems/powx-n/
 
-@ file:    50.py
+@ file:    50. Pow(x, n).py
 @ version: 1.0.0
 
 @ Author:  Lebhoryi@gmail.com
