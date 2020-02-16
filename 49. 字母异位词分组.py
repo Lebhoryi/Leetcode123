@@ -1,6 +1,6 @@
 # coding=utf-8
 '''
-@ Summary: 
+@ Summary: 字典，{set():[]}
 @ Update:  
 
 @ file:    49. 字母异位词分组.py
