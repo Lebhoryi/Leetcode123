@@ -12,7 +12,7 @@
 def merge(intervals: [[int]]) -> [[int]]:
     if len(intervals) < 2:  return intervals
     # 先排序， 在进行计算
-    res, intervals  =[], sorted(intervals, key=lambda x: x[0])
+    res, intervals = [], sorted(intervals, key=lambda x: x[0])
 
     for i in range(len(intervals)):
         if not res or res[-1][1] < intervals[i][0]:
