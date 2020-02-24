@@ -14,9 +14,7 @@ def searchMatrix(matrix: [[int]], target: int) -> bool:
     if not matrix or not matrix[0]:  return False
     col = list(list(zip(*matrix))[0])  # set() -> list()
     index = bisect.bisect_left(col, target, 0, len(matrix)-1)  # 二分查找
-    # if target < col[index] or index != len(matrix)-1:  index -= 1
     return target in (matrix[index] + matrix[index-1])
-    # return index
 
 
 matrix = [
